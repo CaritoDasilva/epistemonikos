@@ -1,0 +1,24 @@
+{
+  "name": "prueba_postulacion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prueba1.js",
+  "scripts": {
+    "prueba1": "mocha prueba1.js",
+    "prueba2": "mocha prueba2.js",
+    "prueba3": "mocha prueba3.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^7.0.1"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "request": "^2.88.0",
+    "selenium-webdriver": "^4.0.0-alpha.5",
+    "typescript": "^3.7.5"
+  }
+}
