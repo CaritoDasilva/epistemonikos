@@ -6,9 +6,23 @@ var assert = require('assert');
 
 var RisToCSV = (search) => {
 
-    /* Uncluir acá el código de la prueba de selección */
+  var words = search.split(" ");
+  let columnTwo = search.slice(search.indexOf('TI') + 3, search.indexOf('PY')-1);
+  let url;
+  let columnsCompose;
+  words.forEach((word, i ) => {
+    if (word.includes('UR')) {
+      return columnsCompose = {
+        url: words[i + 3],
+        i: i
+      }
+      
+    }
+  })
+  let columnThree = search.slice(search.indexOf('AB') + 3, columnsCompose.i);
+  let data = `${columnsCompose.url}\t${columnTwo}\t${columnThree}`;
 
-    return []
+    return data;
 }
 
 describe('Prueba 2', function() {
